@@ -5,7 +5,7 @@ export async function getAffirmation() {
     const primaryUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://www.affirmations.dev')}`
 
     try {
-        const res = await axios.get('/api/affirmation', {
+        const res = await axios.get(primaryUrl, {
             headers: { Accept: 'application/json' },
             timeout: 8000,
         })
